@@ -11,7 +11,7 @@ import {
   styleUrls: ['home.page.scss'],
 })
 export class HomePage implements OnInit {
-
+name = 'Apply one';
   constructor() {}
 
 
@@ -22,7 +22,6 @@ ngOnInit() {
   // iOS will prompt user and return if they granted permission or not
   // Android will just grant without prompting
   PushNotifications.requestPermissions().then(result => {
-    console.log('Getting push request');
     if (result.receive === 'granted') {
       // Register with Apple / Google to receive push via APNS/FCM
       PushNotifications.register();
