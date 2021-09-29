@@ -1,0 +1,6 @@
+{
+	"appId": "com.domain.ionicfpn",
+	"appName": "ionic-FPN",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
