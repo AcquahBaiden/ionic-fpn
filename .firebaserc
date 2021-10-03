@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "ionic-fpn": {
+      "hosting": {
+        "app": [
+          "ionic-fpn"
+        ]
+      }
+    }
+  }
+}

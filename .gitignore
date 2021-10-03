@@ -32,3 +32,8 @@ npm-debug.log*
 /android
 /ios
 *.rtf
+.editorconfig
+.eslintrc.JSON
+.browserslistrc
+tsconfig.json
+tsconfig.spec.json

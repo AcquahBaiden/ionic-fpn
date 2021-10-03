@@ -14,7 +14,9 @@
   </ion-header>
 
   <div id="container">
-    Apply what? againnnnnnn {{name}}
+    <ion-button color="primary" expand="full" (click)="requestUserPermission()">Request Permission</ion-button>
+    <ion-button color="secondary" expand="full" (click)="deleteUserToken()">Delete token</ion-button>
+    <h2>Try 3 {{name}}</h2> <br>
     <strong>Ready to create an app?</strong>
     <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
   </div>

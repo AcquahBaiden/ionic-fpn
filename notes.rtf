@@ -13,3 +13,24 @@ Installations for firebase cloud messaging\
 Solution was to reinstall xcode\
 \
 Android push notification token = cZ76AORaQx2fP3c8PKMxmE:APA91bEPws6qHTen7FybwX-nRz8yTaAjMOypT0P6OsE2o1s6XqXeBoc-pAA-d5EYaNiiwU-rbgewAFrav5E4mLQQBbp42fKV0cg200cci-hrewFQlPk4UTihtF0LM9JH2FAnOlUt1dvC}
+
+Adding PWA
+ng add @angular/fire
+ng add @angular/pwa
+
+create the firebase-messaging-sw.js in app folder
+https://github.com/firebase/quickstart-js/blob/master/messaging/firebase-messaging-sw.js
+
+create combined-sw.js
+
+replace app.module service worker with the combined-sw.js
+
+in angular.json - app-build-achitect-assets add the 2 sw files after manifest.webmanifest
+**this is just for the build of angular**
+
+add gcm_sender_id to the manifest.webmaifest
+gcm_sender_id in firebase console CM settings
+
+Add the AngularFireModule and AngularFireMessagingModule to the app.module
+
+update fcm.service with logic

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/member-ordering */
 import { Injectable } from '@angular/core';
 import {ActionPerformed,
   PushNotificationSchema,
@@ -6,12 +7,14 @@ import {ActionPerformed,
 
 import { Router } from '@angular/router';
 import { Capacitor } from '@capacitor/core';
+
 @Injectable({
   providedIn: 'root'
 })
 export class FcmService {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router,
+    ) { }
 
   initPush() {
     console.log('checking isNativePlatform:',Capacitor.isNativePlatform);
